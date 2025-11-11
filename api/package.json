@@ -1,36 +1,32 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Full Stack JS Challenge API",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -L",
-    "test": "mocha -w ./tests/**/*.spec.js"
+    "start": "nodemon index.js",
+    "test": "mocha --recursive --exit"
   },
-  "author": "Henry",
+  "author": "Marcos",
   "license": "ISC",
   "engines": {
-    "node": ">=12.18.3",
+    "node": ">=14.0.0",
     "npm": ">=6.14.6"
   },
   "dependencies": {
-    "axios": "^0.27.2",
-    "body-parser": "^1.19.0",
-    "cookie-parser": "^1.4.5",
+    "axios": "^1.7.2",
     "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "googleapis": "^107.0.0",
-    "morgan": "^1.10.0",
-    "nodemailer": "^6.7.8",
-    "nodemon": "^2.0.19",
-    "pg": "^8.5.1",
-    "sequelize": "^6.3.5"
+    "express": "^4.18.2",
+    "dotenv": "^16.0.3"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^8.2.1",
-    "supertest": "^6.0.1",
-    "supertest-session": "^4.1.0"
+    "chai": "^4.3.8",
+    "chai-http": "^4.4.0",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.1.0",
+    "nock": "^13.3.0",
+    "sinon": "^9.2.4",
+    "proxyquire": "^2.1.3"
+
   }
 }
